@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Painting App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>IMAGINATION ACTION - Paint</h2>
+        <canvas id="paintCanvas"></canvas>
+        
+        <div class="top-tools">
+            <input type="color" id="colorPicker">
+            <input type="range" id="brushSize" min="1" max="50" value="5">
+            <select id="brushType">
+                <option value="round">Round</option>
+                <option value="square">Square</option>
+            </select>
+            <button id="eraserBtn">Eraser</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+        
+        <div class="tools">
+            <button onclick="usePreset('circle')">Circle</button>
+            <button onclick="usePreset('rectangle')">Rectangle</button>
+            <button onclick="usePreset('line')">Line</button>
+            <button onclick="usePreset('triangle')">Triangle</button>
+            <button onclick="usePreset('star')">Star</button>
+        </div>
+        
+        <div class="bottom-tools">
+            <button id="goBackBtn">Go Back</button>
+            <button id="saveBtn">Save</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

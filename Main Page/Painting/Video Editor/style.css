@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url('pexels-photo-807598.jpeg');
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 30px 40px;
+    background: rgba(44, 44, 44, 0.6); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    margin-top: 60px;
+}
+
+
+/* File Upload Styling */
+.custom-file-upload {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.custom-file-upload:hover {
+    background: #0056b3;
+}
+
+/* Video Player */
+video {
+    width: 100%;
+    max-height: 300px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: black;
+    display: none; /* Hidden until video loads */
+}
+
+/* Controls Sections */
+.controls {
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.controls div {
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+/* Buttons */
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.download-btn {
+    background: #ff5722;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.download-btn:hover {
+    background: #e64a19;
+}

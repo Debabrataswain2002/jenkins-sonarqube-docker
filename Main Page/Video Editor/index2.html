@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IMAGINATION ACTION</h1>
+        <h2>🎬 Video Editor</h2>
+        
+        <!-- Video Upload -->
+        <label class="custom-file-upload">
+            <input type="file" id="videoUpload" accept="video/*" onchange="loadVideo(event)" hidden>
+            📂 Upload Video
+        </label>
+        <video id="video" controls></video>
+
+        <div class="controls">
+            <!-- Trim Section -->
+            <div class="trim-section">
+                <h3>✂ Trim Video</h3>
+                <label>Start: <input type="number" id="startTime" min="0" value="0"></label>
+                <label>End: <input type="number" id="endTime" min="0" value="10"></label>
+                <button onclick="trimVideo()">Apply Trim</button>
+            </div>
+            
+            <!-- Crop Section -->
+            <div class="crop-section">
+                <h3>📏 Crop Video</h3>
+                <label>Width: <input type="number" id="cropWidth" min="100" value="300"></label>
+                <label>Height: <input type="number" id="cropHeight" min="100" value="300"></label>
+                <button onclick="cropVideo()">Apply Crop</button>
+            </div>
+            
+            <!-- Add Music Section -->
+            <div class="audio-section">
+                <h3>🎵 Add Music</h3>
+                <label class="custom-file-upload">
+                    <input type="file" id="audioUpload" accept="audio/*" hidden>
+                    🎶 Upload Audio
+                </label>
+                <button onclick="addMusic()">Apply Audio</button>
+                <button class="reset-btn" style="margin-left: 60px;" onclick="resetVideo()">🔄 Reset Video</button>
+            </div>
+        </div>
+        
+        <!-- Download Button -->
+        <button class="download-btn" onclick="downloadVideo()">⬇ Download Edited Video</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
